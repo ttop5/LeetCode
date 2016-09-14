@@ -1,7 +1,6 @@
 /**
  * @param {number[]} nums
  * @return {number}
- * 在一个数组中操作，不使用额外的新空间
  */
 function removeDuplicates(nums) {
   let len = 1; // 最少有一个元素不重复
