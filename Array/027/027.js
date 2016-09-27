@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @param {number} val
  * @return {number}
- * 使用类似于指针的思路
+ * 使用类似于两个指针的思路
  */
 function removeElement (nums, val) {
   let j = 0;
