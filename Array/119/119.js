@@ -2,7 +2,7 @@
  * @param {number} rowIndex
  * @return {number[]}
  */
-const getRow = function(rowIndex) {
+ function getRow(rowIndex) {
   let numList = [];
   for(let i=0; i<(rowIndex + 1); i++) {
     numList.push([1]);  // 在列表中生成一个新的列表并将第一个置为1
@@ -15,4 +15,4 @@ const getRow = function(rowIndex) {
     }
   }
   return numList[rowIndex]
-};
+}
