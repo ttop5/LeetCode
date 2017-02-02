@@ -24,17 +24,17 @@ function sequentialSearch(array, item) {
 
 ```JavaScript
 function binarySearch(array, item){
-  let h = array.length - 1;
-  let l = 0;
-  while (l <= h) {
-    let m = Math.floor((h + l) / 2);
-    if (array[m] === item) {
-      return m;
+  let high = array.length - 1;
+  let low = 0;
+  while (low <= high) {
+    let mid = Math.floor((high + low) / 2);
+    if (array[mid] === item) {
+      return mid;
     }
-    if (item > array[m]) {
-      l = m + 1;
+    if (item > array[mid]) {
+      low = mid + 1;
     } else {
-      h = m - 1;
+      high = mid - 1;
     }
   }
   return -1;
